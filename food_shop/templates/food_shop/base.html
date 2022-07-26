@@ -153,5 +153,11 @@
 
     <!-- Template Javascript -->
     <script src="{% static 'food_shop/js/main.js' %}"></script>
+  {% if success_message %}
+    <script>
+        alert("{{ success_message }}");
+    </script>
+{% endif %}
+
 </body>
 </html>
